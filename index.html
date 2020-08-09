@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/16d8356fa4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="weatherIcons">
+      <!-- clear -->
+      <i class="fas fa-sun hide"></i>
+      <i class="fas fa-moon hide"></i>
+
+      <!-- overcast -->
+      <i class="fas fa-cloud-moon hide"></i>
+      <i class="fas fa-cloud-sun hide"></i>
+      <i class="fas fa-cloud hide"></i>
+
+      <!-- storm -->
+      <i class="fas fa-snowflake hide"></i>
+      <i class="fas fa-cloud-moon-rain hide"></i>
+      <i class="fas fa-poo-storm hide"></i>
+      <i class="fas fa-cloud-sun-rain hide"></i>
+    </div>
+
+    <div class="weatherInquiry">
+      <label for="city">Enter City Name:</label>
+      <input type="text" name="city" id="entryCity" />
+      <button class="cityBtn">Submit</button>
+
+      <p class="error"></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script defer src="assets/script.js"></script>
+  </body>
+</html>
