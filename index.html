@@ -9,10 +9,17 @@
     ></script>
     <link rel="stylesheet" href="assets/style.css" />
 
-    <title>Document</title>
+    <title>Weather Forecast</title>
   </head>
   <body>
+    <header>
+      <h1>Weather dashboard</h1>
+    </header>
     <div class="weatherIcons">
+      <!-- tempature gage -->
+      <i class="fas fa-temperature-low hide"></i>
+      <i class="fas fa-temperature-high hide"></i>
+
       <!-- clear -->
       <i class="fas fa-sun hide"></i>
       <i class="fas fa-moon hide"></i>
@@ -21,23 +28,75 @@
       <i class="fas fa-cloud-moon hide"></i>
       <i class="fas fa-cloud-sun hide"></i>
       <i class="fas fa-cloud hide"></i>
+      <i class="fas fa-smog hide"></i>
+
+      <!-- spotty showers -->
+      <i class="fas fa-cloud-sun-rain hide"></i>
+      <i class="fas fa-cloud-moon-rain hide"></i>
 
       <!-- storm -->
       <i class="fas fa-snowflake hide"></i>
-      <i class="fas fa-cloud-moon-rain hide"></i>
       <i class="fas fa-poo-storm hide"></i>
-      <i class="fas fa-cloud-sun-rain hide"></i>
     </div>
 
     <div class="weatherInquiry">
       <label for="city">Enter City Name:</label>
       <input type="text" name="city" id="entryCity" />
       <button class="cityBtn">Submit</button>
-
+      <p class="cityDisplay"></p>
       <p class="error"></p>
     </div>
 
+    <div class="weatherDisplay">
+      <div class="day1 card">
+        <h4 class="day1date">Day 1</h4>
+        <i class="fas fa-temperature-high"></i>
+        <p class="day1max"></p>
+        <i class="fas fa-temperature-low"></i>
+        <p class="day1min"></p>
+        <p class="day1main"></p>
+        <i class="day1icon current"></i>
+      </div>
+      <div class="day2 card">
+        <h4 class="day2date">Day 2</h4>
+        <i class="fas fa-temperature-high"></i>
+        <p class="day2max"></p>
+        <i class="fas fa-temperature-low"></i>
+        <p class="day2min"></p>
+        <p class="day2main"></p>
+        <i class="day2icon current"></i>
+      </div>
+      <div class="day3 card">
+        <h4 class="day3date">Day 3</h4>
+        <i class="fas fa-temperature-high"></i>
+        <p class="day3max"></p>
+        <i class="fas fa-temperature-low"></i>
+        <p class="day3min"></p>
+        <p class="day3main"></p>
+        <i class="day3icon current"></i>
+      </div>
+
+      <div class="day4 card">
+        <h4 class="day4date">Day 4</h4>
+        <i class="fas fa-temperature-high"></i>
+        <p class="day4max"></p>
+        <i class="fas fa-temperature-low"></i>
+        <p class="day4min"></p>
+        <p class="day4main"></p>
+        <i class="day4icon current"></i>
+      </div>
+      <div class="day5 card">
+        <h4 class="day5date">Day 5</h4>
+        <i class="fas fa-temperature-high"></i>
+        <p class="day5max"></p>
+        <i class="fas fa-temperature-low"></i>
+        <p class="day5min"></p>
+        <p class="day5main"></p>
+        <i class="day5icon current"></i>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script defer src="assets/script.js"></script>
   </body>
 </html>
