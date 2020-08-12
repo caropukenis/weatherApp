@@ -8,11 +8,16 @@ $(".cityBtn").on("click", function () {
   let cityEntry = $("input").val();
   console.log("you clicked");
   console.log(cityEntry);
+  $(".day1icon").empty();
+  $(".day2icon").empty();
+  $(".day3icon").empty();
+  $(".day4icon").empty();
+  $(".day5icon").empty();
   if (cityEntry != "") {
     $(".cityDisplay").prepend(cityEntry + "<br>");
     $.ajax({
       url:
-        "http://api.openweathermap.org/data/2.5/forecast?q=" +
+        "https://api.openweathermap.org/data/2.5/forecast?q=" +
         cityEntry +
         "&units=imperial" +
         "&APPID=97a578647537cc0fccec405b1840b586",
