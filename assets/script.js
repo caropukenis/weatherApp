@@ -4,8 +4,14 @@ $(".day3date").text(moment().add(2, "days").format("l"));
 $(".day4date").text(moment().add(3, "days").format("l"));
 $(".day5date").text(moment().add(4, "days").format("l"));
 
+$(window).on("load", function () {
+  var savedCity = localStorage.getItem("myCity");
+  console.log(savedCity);
+});
+
 $(".cityBtn").on("click", function () {
   let cityEntry = $("input").val();
+  localStorage.setItem("myCity", cityEntry);
   console.log("you clicked");
   console.log(cityEntry);
   $(".day1icon").empty();
